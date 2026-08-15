@@ -3,7 +3,7 @@ import pytest
 from pages import LoginPage
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture
 def login_page(page):
     """Фикстура: открытая страница логина."""
     return LoginPage(page).open()
