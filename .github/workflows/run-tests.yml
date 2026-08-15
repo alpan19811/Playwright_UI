@@ -27,7 +27,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run API tests
-        run: pytest tests/api -v         # путь поправь под свою папку
+        run: pytest tests/API -v         # путь поправь под свою папку
 
   # ---------- JOB 2: UI-тесты ----------
   ui-tests:

@@ -1,6 +1,8 @@
+import pytest
 from playwright.sync_api import expect
 
 
+@pytest.mark.skip(reason="Демо для Trace Viewer, не для CI")
 def test_search_incorrectly(page):
     """Тест, который намеренно упадёт для демонстрации трейса."""
     # Открываем сайт Playwright
